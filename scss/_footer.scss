@@ -4,7 +4,7 @@
     color: rgb(104, 102, 102);
 }
 .segment-one h2, .segment-two h2, .segment-three h2, .segment-four h2{
-    font-size: 18px;
+    @include encabezados;
     color: white;
     letter-spacing: 3px;
     margin: 10px 0;
@@ -70,5 +70,8 @@
 .footer-bottom-text{
     text-align: center;
     background: $header_footer;
+    color: white;
+}
+.mail__reservas a{
     color: white;
 }

@@ -1,5 +1,6 @@
 @import './variables';
 @import './footer';
+@import './mixin';
 
 
 @font-face {
@@ -84,15 +85,19 @@ li a{
     letter-spacing: 0.1em;
     border-radius: .3rem;
 }
-.btn-book{
-    background: $Call_action;
-    text-shadow: none;
+.btn {
     padding: 9px 25px;
     margin-top: 1rem;
     margin-right: 1rem;
     font-weight: 700;
     letter-spacing: 0.1em;
     border-radius: .3rem;
+}
+/*  ------ Extend ------ */
+.btn-book{
+    @extend .btn;
+    background: $Call_action;
+    text-shadow: none;
 }
 #shop a:hover{
     background-color: $header_footer;
@@ -485,7 +490,7 @@ li a{
 .nav__label, .nav__imput{
     display: none;
 }
-    @media screen and (max-width: 600px){
+@media screen and (max-width: 600px){
 
     .nav__label{
         display: block;
