@@ -1,23 +1,4 @@
-@mixin titulos {
-    h1 {
-      font-size: 1.5em;
-    }
-    h2 {
-      font-size: 1.2em;
-    }
-    h3 {
-      font-size: 1em;
-    }
+ @mixin titulos($tamano) {
+    font-size: $tamano - 0.2;
   }
 
-  @mixin titulos($tamano) {
-    h1 {
-      font-size: $tamano;
-    }
-    h2 {
-      font-size: $tamano - 0.2;
-    }
-    h3 {
-      font-size: $tamano - 0.5;
-    }
-  }

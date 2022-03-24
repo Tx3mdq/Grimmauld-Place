@@ -4,7 +4,7 @@
     color: rgb(104, 102, 102);
 }
 .segment-one h2, .segment-two h2, .segment-three h2, .segment-four h2{
-    @include encabezados;
+    @include titulos (1.5rem);
     color: white;
     letter-spacing: 3px;
     margin: 10px 0;
