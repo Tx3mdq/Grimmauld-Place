@@ -39,6 +39,9 @@
     color: #fff;
     padding: 10px 12px;
 }
+.segment-three a:hover{
+    background-color: $Call_action;
+}
 .segment-four h2::before{
     content: '|';
     color: $Call_action;
@@ -58,6 +61,10 @@
     color: $header_footer;
     text-transform: uppercase;
     font-size: 16px;
+}
+.segment-four form input[type=submit]:hover{
+    background: $Call_action;
+    color: white;
 }
 .segment-three a{
     margin-right: 15px;
